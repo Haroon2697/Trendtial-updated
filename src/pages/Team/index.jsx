@@ -55,7 +55,7 @@ const TeamSection = () => {
       imageUrl: "/faheem.jpg",
       bio: "Financial expert ensuring sustainable growth and profitability.",
       color: "from-purple-500 to-purple-700",
-      linkedinUrl: "https://linkedin.com/in/abdul-faheem",
+      linkedinUrl: "https://www.linkedin.com/in/abdul-faheem-111a0b1b9/",
       twitterUrl: "https://twitter.com/abdul-faheem",
     },
     {

@@ -3,7 +3,7 @@ import HeroBg2 from "../assets/hero-bg-2.png";
 
 const Hero = () => {
   return (
-    <section className="relative flex flex-col justify-center h-[100vh] pb-20">
+    <section className="relative flex flex-col justify-center lg:h-[100vh] sm:h-[50vh] pt-20 pb-28">
       <div className="absolute inset-0 bg-black">
         <div className="absolute inset-0 bg-gradient-radial from-red-500/30 via-transparent to-transparent opacity-50" />
       </div>
@@ -12,14 +12,14 @@ const Hero = () => {
         style={{
           transform: "translateX(-50%)",
         }}
-        className="absolute opacity-50 -top-[80%] left-[50%]"
+        className="absolute opacity-60 -top-[80%] left-[50%]"
       />
       <img
         src={HeroBg2}
         style={{
           transform: "translateX(-50%)",
         }}
-        className="absolute opacity-40 left-[40%] -bottom-[15%]"
+        className="absolute opacity-40 left-[50%] -bottom-[15%]"
       />
       <div className="relative max-w-7xl mx-auto px-6 text-center">
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
