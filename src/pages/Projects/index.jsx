@@ -4,62 +4,60 @@ import { useInView } from "react-intersection-observer";
 const projectsData = {
   tech: [
     {
-      name: "AI-powered App",
+      name: "Web Development Process",
       image:
-        "https://cdn.prod.website-files.com/644911ba57947a8c25ad6be7/64d9f764a58c786881467555_fitness-mobile%20app.png",
-      demo: "https://ai-powered-app-demo.com",
+        "https://images.unsplash.com/photo-1527689368864-3a821dbccc34?crop=entropy&cs=tinysrgb&fit=max&ixid=M3wzNjQ1N3wwfDF8c2VhcmNofDN8fHdlYiUyMGRldmVsb3BtZW50fGVufDB8fHx8fDE2ODU4Nzg4NDc&ixlib=rb-1.2.1&q=80&w=1080",
+      demo: "https://web-development-demo.com",
       description:
-        "An innovative app leveraging artificial intelligence to automate tasks, enhance decision-making, and drive productivity.",
+        "Our web development journey starts with understanding your vision. We begin by brainstorming ideas to design interfaces that are both visually appealing and user-friendly. Our development phase involves writing clean, maintainable code, followed by rigorous testing to ensure a smooth user experience. Finally, we deploy the project to a scalable hosting platform, ensuring fast performance and security.",
     },
     {
-      name: "Blockchain Platform",
+      name: "Tech & Design Innovations",
       image:
-        "https://www.almondsolutions.com/images/blog-ui-ux-150223.jpg",
-      demo: "https://blockchain-platform-demo.com",
+        "https://images.unsplash.com/photo-1580894732444-244b1f2f3a6e?crop=entropy&cs=tinysrgb&fit=max&ixid=M3wzNjQ1N3wwfDF8c2VhcmNofDV8fHRlY2glMjBpbm5vdmF0aW9ufGVufDB8fHx8fDE2ODU4Nzg4NjE&ixlib=rb-1.2.1&q=80&w=1080",
+      demo: "https://tech-and-design-demo.com",
       description:
-        "A robust blockchain platform enabling secure transactions and supporting decentralized applications.",
+        "By combining cutting-edge technology with creative design, we deliver solutions that stand out. Our process focuses on responsive design, intuitive interfaces, and advanced features like AI-powered functionalities and cloud integrations. From concept to final implementation, we ensure that your product embodies innovation and usability.",
     },
   ],
   marketing: [
     {
-      name: "Social Media Campaign",
+      name: "Digital Marketing Strategies",
       image:
-        "https://cdn.uistore.design/assets/images/yolk-free-ios-ui-kit-design-system-for-sketch-thumb.webp",
-      demo: "https://social-media-campaign-demo.com",
+        "https://images.unsplash.com/photo-1559028012-df374ac84174?crop=entropy&cs=tinysrgb&fit=max&ixid=M3wzNjQ1N3wwfDF8c2VhcmNofDE1fHxkaWdpdGFsJTIwbWFya2V0aW5nfGVufDB8fHx8fDE2ODU4Nzg5MDk&ixlib=rb-1.2.1&q=80&w=1080",
+      demo: "https://digital-marketing-strategies.com",
       description:
-        "A dynamic social media campaign that achieved a 300% increase in engagement and expanded brand reach.",
+        "Our digital marketing approach is data-driven and result-oriented. We start by analyzing market trends and audience behavior. Through targeted ad campaigns, social media strategies, and influencer collaborations, we enhance brand visibility. Our expertise in email marketing, PPC, and Google Ads ensures high ROI for our clients.",
     },
     {
-      name: "Content Strategy",
+      name: "Content Writing & SEO Optimization",
       image:
-        "https://assets.justinmind.com/wp-content/uploads/2019/10/list-ui-design-daily-planner.png",
-      demo: "https://content-strategy-demo.com",
+        "https://images.unsplash.com/photo-1557800636-894a64c1696f?crop=entropy&cs=tinysrgb&fit=max&ixid=M3wzNjQ1N3wwfDF8c2VhcmNofDV8fGNvbnRlbnQlMjB3cml0aW5nJTIwU0VPfGVufDB8fHx8fDE2ODU4Nzg5MjU&ixlib=rb-1.2.1&q=80&w=1080",
+      demo: "https://content-seo-demo.com",
       description:
-        "A data-driven content strategy crafted to attract, engage, and convert audiences effectively.",
+        "We craft content that informs, engages, and converts. Our SEO strategies include keyword research, on-page optimization, and backlink building to improve your website's search engine ranking. By combining high-quality content with effective SEO techniques, we help businesses drive organic traffic and generate leads.",
     },
   ],
   shopify: [
     {
-      name: "E-commerce Store",
+      name: "Shopify Product Research",
       image:
-        "https://www.shutterstock.com/image-vector/technology-user-interface-ui-infographics-260nw-1652745280.jpg",
-      demo: "https://ecommerce-store-demo.com",
+        "https://images.unsplash.com/photo-1560853651-dfbd04e778b2?crop=entropy&cs=tinysrgb&fit=max&ixid=M3wzNjQ1N3wwfDF8c2VhcmNofDh8fHNob3BpZnklMjBwcm9kdWN0fGVufDB8fHx8fDE2ODU4Nzg5NTE&ixlib=rb-1.2.1&q=80&w=1080",
+      demo: "https://shopify-product-research.com",
       description:
-        "A visually stunning and fully responsive Shopify store designed for a seamless online shopping experience.",
+        "Product research is the cornerstone of Shopify success. Our team hunts for trending and high-demand products by analyzing market data and consumer behavior. We identify niche products with high profit margins, ensuring that your store stands out and appeals to its target audience.",
     },
     {
-      name: "Custom Shopify Theme",
+      name: "Shopify Custom Storefronts",
       image:
-        "https://800c8044-cdn.agilitycms.cloud/Attachments/NewItems/How-to-Choose-the-Right-UI-Partner_20210730200121_0.jpg",
-      demo: "https://custom-shopify-theme-demo.com",
+        "https://images.unsplash.com/photo-1517059224940-d4af9eec41ec?crop=entropy&cs=tinysrgb&fit=max&ixid=M3wzNjQ1N3wwfDF8c2VhcmNofDd8fHNob3BpZnklMjBjdXN0b20lMjBzdG9yZXxlbnwwfHx8fDE2ODU4Nzg5NzM&ixlib=rb-1.2.1&q=80&w=1080",
+      demo: "https://shopify-custom-stores.com",
       description:
-        "A bespoke Shopify theme tailored to reflect brand identity while optimizing user engagement and conversions.",
+        "Our Shopify services include creating bespoke storefronts tailored to your brand identity. We focus on designing intuitive navigation, visually appealing layouts, and optimized checkout processes to enhance user experience and boost conversions.",
     },
   ],
-
-
-
 };
+
 
 const LazyImage = ({ src, alt, className }) => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -83,14 +81,15 @@ const LazyImage = ({ src, alt, className }) => {
           isLoaded ? "opacity-100" : "opacity-0"
         } transition-opacity duration-500`}
         onLoad={() => setIsLoaded(true)}
-        onError={() => console.error("Failed to load image")}
+        onError={(e) => {
+          console.error("Failed to load image:", e.target.src);
+          e.target.src =
+            "https://via.placeholder.com/300"; // Fallback image for errors
+        }}
       />
     </div>
   );
 };
-
-
-
 
 const ProjectsPage = () => {
   const [activeTab, setActiveTab] = useState("tech");
@@ -137,7 +136,11 @@ const ProjectsPage = () => {
                     transition: "transform 0.7s ease-out",
                   }}
                 >
-                  <LazyImage alt={project.name} className={"w-full rounded-lg shadow-lg"} src={project.image}/>
+                  <LazyImage
+                    alt={project.name}
+                    className={"w-full rounded-lg shadow-lg"}
+                    src={project.image}
+                  />
                 </div>
 
                 {/* Content */}
