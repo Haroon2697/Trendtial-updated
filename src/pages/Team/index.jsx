@@ -57,6 +57,15 @@ const TeamSection = () => {
       twitterUrl: "https://twitter.com/abdul-faheem",
     },
     {
+      name: "Khizar",
+      role: "CSO & Co-Founder",
+      imageUrl: "/khizar.jpg",
+      bio: "Building lasting relationships and expanding our client base.",
+      color: "from-green-600 to-green-800",
+      linkedinUrl: "https://linkedin.com/in/khizar",
+      twitterUrl: "https://twitter.com/khizar",
+    },
+    {
       name: "Khadija",
       role: "Head HR",
       imageUrl: "/khadija.jpeg",
@@ -125,15 +134,6 @@ const TeamSection = () => {
       color: "from-pink-500 to-pink-700",
       linkedinUrl: "https://linkedin.com/in/tooba",
       twitterUrl: "https://twitter.com/tooba",
-    },
-    {
-      name: "Khizar",
-      role: "Chief Strategy Officer",
-      imageUrl: "/khizar.jpg",
-      bio: "Building lasting relationships and expanding our client base.",
-      color: "from-green-600 to-green-800",
-      linkedinUrl: "https://linkedin.com/in/khizar",
-      twitterUrl: "https://twitter.com/khizar",
     },
     {
       name: "Fizza",

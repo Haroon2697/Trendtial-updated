@@ -58,25 +58,6 @@ const projectsData = {
   ],
 
 
-  web: [
-    {
-      name: "Web App",
-      image:
-        "https://cdn.prod.website-files.com/644911ba57947a8c25ad6be7/64d9f764a58c786881467555_fitness-mobile%20app.png",
-      demo: "https://web-app-demo.com",
-      description:
-        "A responsive web application that streamlines operations, enhances user experience, and drives growth.",
-    },
-    {
-      name: "Landing Page",
-      image:
-        "https://www.almondsolutions.com/images/blog-ui-ux-150223.jpg",
-      demo: "https://landing-page-demo.com",
-      description:
-        "A high-converting landing page designed to captivate audiences, generate leads, and boost conversions.",
-    },
-  ],
-
 
 };
 
@@ -119,7 +100,7 @@ const ProjectsPage = () => {
       <div className="container mx-auto px-24">
         {/* Tabs */}
         <div className="flex justify-center mb-28">
-          {["tech", "marketing", "shopify","web"].map((tab) => (
+          {["tech", "marketing", "shopify"].map((tab) => (
             <button
               key={tab}
               className={`text-xl font-semibold px-6 py-3 mx-2 rounded-lg ${
