@@ -1,6 +1,13 @@
+import React, { useState } from 'react';
 import { Link } from "react-router";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <nav className="fixed w-full top-0 z-50 bg-[#170707d6] backdrop-blur-sm border-b border-white/10">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
@@ -62,9 +69,57 @@ const Navbar = () => {
             Book a call
           </button>
         </div>
+        <div className="md:hidden">
+          <button
+            onClick={toggleMenu}
+            className="text-white focus:outline-none"
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          >
+            {isMenuOpen ? (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <line x1="18" y1="6" x2="6" y2="18"></line>
+    <line x1="6" y1="6" x2="18" y2="18"></line>
+  </svg>
+) : (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <line x1="3" y1="12" x2="21" y2="12"></line>
+    <line x1="3" y1="6" x2="21" y2="6"></line>
+    <line x1="3" y1="18" x2="21" y2="18"></line>
+  </svg>
+)}
+          </button>
+        </div>
       </div>
+      {isMenuOpen && (
+        <div className="md:hidden">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a
+              href="/team"
+              className="block text-sm text-gray-400 hover:text-white transition-colors py-2 px-4"
+            >
+              Who we are?
+            </a>
+            <a
+              href="/#features"
+              className="block text-sm text-gray-400 hover:text-white transition-colors py-2 px-4"
+            >
+              What we do?
+            </a>
+            <button
+              onClick={() =>
+                (window.location.href =
+                  "mailto:trendtial@gmail.com?subject=Hi Trendtial")
+              }
+              className="block w-full text-left bg-white/10 hover:bg-white/20 text-sm text-white px-4 py-2 rounded-lg transition-colors mt-2"
+            >
+              Book a call
+            </button>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };
 
 export default Navbar;
+

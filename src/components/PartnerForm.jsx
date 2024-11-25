@@ -2,14 +2,14 @@ import React from "react";
 
 const PartnerForm = () => {
   return (
-    <div className="flex relative justify-center items-center pb-16 min-h-screen bg-black">
-      <div className="relative bg-gradient-to-r from-blue-500/20 to-gray-800/10 text-white rounded-3xl p-10 flex flex-col md:flex-row shadow-2xl w-11/12 max-w-6xl">
+    <div className="flex relative justify-center items-center pb-16 min-h-screen bg-black px-4 sm:px-6">
+      <div className="relative bg-gradient-to-r from-blue-500/20 to-gray-800/10 text-white rounded-3xl p-6 sm:p-10 flex flex-col md:flex-row shadow-2xl w-full max-w-6xl">
         {/* Left Section */}
-        <div className="w-full md:w-[50%] mb-6 md:mb-0 flex flex-col justify-center px-4">
+        <div className="w-full md:w-[50%] mb-6 md:mb-0 flex flex-col justify-center px-0 sm:px-4">
           <h2 className="text-lg font-medium uppercase tracking-wide mb-2">
             Let's Begin
           </h2>
-          <h1 className="text-4xl font-extrabold leading-tight mb-6">
+          <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-6">
             Ready to Get Started?
           </h1>
           <p className="text-gray-300 leading-relaxed mb-8">
@@ -21,12 +21,12 @@ const PartnerForm = () => {
         {/* Right Section */}
         <div
           style={{ backdropFilter: "blur(10px)" }}
-          className="w-full md:w-[50%] bg-[#dc26250f] rounded-lg p-8"
+          className="w-full md:w-[50%] bg-[#dc26250f] rounded-lg p-6 sm:p-8"
         >
           <form>
             {/* First and Last Name */}
-            <div className="flex flex-col md:flex-row md:space-x-4 mb-6">
-              <div className="flex-1 mb-4 md:mb-0">
+            <div className="flex flex-col sm:flex-row sm:space-x-4 mb-6">
+              <div className="flex-1 mb-4 sm:mb-0">
                 <label className="block text-sm font-medium mb-2">First Name</label>
                 <input
                   type="text"
@@ -67,8 +67,8 @@ const PartnerForm = () => {
             {/* Phone Number */}
             <div className="mb-6">
               <label className="block text-sm font-medium mb-2">Phone Number</label>
-              <div className="flex">
-                <select className="bg-transparent border border-[#ffffff2b] rounded-l-lg px-4 py-3 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none">
+              <div className="flex flex-col sm:flex-row">
+                <select className="w-full sm:w-auto bg-transparent border border-[#ffffff2b] rounded-lg sm:rounded-l-lg sm:rounded-r-none px-4 py-3 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none mb-2 sm:mb-0">
                   <option value="US">US</option>
                   <option value="UK">UK</option>
                   <option value="PK">PK</option>
@@ -76,14 +76,14 @@ const PartnerForm = () => {
                 <input
                   type="text"
                   placeholder="+1 (555) 987-65"
-                  className="flex-1 bg-transparent border border-[#ffffff2b] rounded-r-lg px-4 py-3 text-sm placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                  className="w-full bg-transparent border border-[#ffffff2b] rounded-lg sm:rounded-l-none sm:rounded-r-lg px-4 py-3 text-sm placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
                 />
               </div>
             </div>
 
             {/* Terms and Conditions */}
-            <div className="flex items-center space-x-2 mb-6">
-              <input type="checkbox" className="w-4 h-4 text-blue-500 rounded" />
+            <div className="flex items-start sm:items-center space-x-2 mb-6">
+              <input type="checkbox" className="w-4 h-4 mt-1 sm:mt-0 text-blue-500 rounded" />
               <label className="text-sm">
                 I agree to the{" "}
                 <a href="#" className="text-blue-400 hover:underline">
@@ -111,3 +111,4 @@ const PartnerForm = () => {
 };
 
 export default PartnerForm;
+

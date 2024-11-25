@@ -2,9 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { LiaLinkedin } from "react-icons/lia";
-import { BsTwitter } from "react-icons/bs";
-import { BiLogoLinkedin, BiX } from "react-icons/bi";
+import { BiLogoLinkedin } from "react-icons/bi";
 import { FaXTwitter } from "react-icons/fa6";
 
 // Custom Arrow Components
@@ -66,7 +64,7 @@ const TeamSection = () => {
       color: "from-pink-500 to-pink-700",
       linkedinUrl: "https://linkedin.com/in/khadija",
       twitterUrl: "https://twitter.com/khadija",
-      fitTop: false, // Adjusted for clear visibility of face
+      fitTop: false,
     },
     {
       name: "Emaan",
@@ -86,7 +84,7 @@ const TeamSection = () => {
       color: "from-green-600 to-green-800",
       linkedinUrl: "https://linkedin.com/in/mehreen",
       twitterUrl: "https://twitter.com/mehreen",
-      fitTop: true, // Adjusted for clear visibility of face
+      fitTop: true,
     },
     {
       name: "Anooshy",
@@ -97,7 +95,7 @@ const TeamSection = () => {
       color: "from-yellow-500 to-yellow-700",
       linkedinUrl: "https://linkedin.com/in/anooshy",
       twitterUrl: "https://twitter.com/anooshy",
-      fitTop: true, // Adjusted for clear visibility of face
+      fitTop: true,
     },
     {
       name: "Sana",
@@ -108,7 +106,7 @@ const TeamSection = () => {
       color: "from-yellow-600 to-yellow-800",
       linkedinUrl: "https://linkedin.com/in/sana",
       twitterUrl: "https://twitter.com/sana",
-      fitTop: true, // Adjusted for clear visibility of face
+      fitTop: true,
     },
     {
       name: "Aabis",
@@ -123,7 +121,7 @@ const TeamSection = () => {
       name: "Tooba",
       role: "Director Global Expansion",
       imageUrl: "/tooba.jpg",
-      bio: "Spearheading international growth through data-driven strategies.",
+      bio: "Spearheading international growth through data-driven strategies.",
       color: "from-pink-500 to-pink-700",
       linkedinUrl: "https://linkedin.com/in/tooba",
       twitterUrl: "https://twitter.com/tooba",
@@ -178,11 +176,11 @@ const TeamSection = () => {
   };
 
   return (
-    <div className="bg-black py-16 px-6 lg:px-44 pb-36 pt-[8%]">
+    <div className="bg-black py-16 px-4 sm:px-6 lg:px-44 pb-36 pt-24 sm:pt-32">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="mb-12">
-          <h2 className="text-4xl font-bold text-white">
+        <div className="mb-12 pl-6">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white">
             Meet our team of creative experts.
           </h2>
           <p className="text-gray-300 mt-4">
@@ -203,17 +201,17 @@ const TeamSection = () => {
                     style={{
                       backgroundImage: `url(${member.imageUrl})`,
                       backgroundSize: "cover",
-                      backgroundPosition: "center",
+                      backgroundPosition: member.fitTop ? "top" : "center",
                       backgroundBlendMode: "overlay"
                     }}
                   ></div>
 
                   {/* Member Info */}
                   <div className="mt-6">
-                    <h3 className="text-2xl font-semibold text-white">
+                    <h3 className="text-xl sm:text-2xl font-semibold text-white">
                       {member.name}
                     </h3>
-                    <p className="text-gray-200">{member.role}</p>
+                    <p className="text-sm sm:text-base text-gray-200">{member.role}</p>
                   </div>
 
                   {/* Social Links */}
@@ -242,3 +240,4 @@ const TeamSection = () => {
 };
 
 export default TeamSection;
+
