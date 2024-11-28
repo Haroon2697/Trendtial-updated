@@ -182,7 +182,7 @@ const VideoGallery = () => {
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 text-[#1a1b26]">VideoGraphy</h1>
           <p className="text-xl text-[#1a1b26]">
-            Unleash the Power of Visual Storytelling with Mangovers' Videography Services.
+            Unleash the Power of Visual Storytelling with ' Videography Services.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
