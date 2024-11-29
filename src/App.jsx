@@ -25,6 +25,8 @@ function App() {
 
           <Route path="/projects/:category/:Video Editing & Production" element={<VideoGallary />} /> 
           <Route path="/projects/:category/:Web Development Process" element={<SEO />} />
+          
+          <Route path="/projects/:category/:ProjectName" element={<VideoGallary />} />
 
           {/* Shopify */}
 
