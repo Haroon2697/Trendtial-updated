@@ -4,6 +4,8 @@ import { Route, Routes } from "react-router-dom";
 import ProjectsPage from "./pages/Projects";
 import TeamPage from "./pages/Team";
 import VideoGallary from "./pages/Portfolio/VideoGallary";
+import SEO from "./pages/Portfolio/SEO";
+import WebDev from "./pages/Portfolio/WebDev";
 import Footer from "./components/Footer";
 
 function App() {
@@ -14,7 +16,23 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/team" element={<TeamPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/projects/:category/:projectName" element={<VideoGallary />} /> 
+
+          {/* Tech */}
+          
+          <Route path="/projects/:category/:Content Writing & SEO Optimization" element={<WebDev />} />
+          
+          {/* Marketing */}
+
+          <Route path="/projects/:category/:Video Editing & Production" element={<VideoGallary />} /> 
+          <Route path="/projects/:category/:Web Development Process" element={<SEO />} />
+
+          {/* Shopify */}
+
+
+          
+
+
+          <Route path="*" element={<h1>Not Found</h1>} />
           
       </Routes>
       <Footer />

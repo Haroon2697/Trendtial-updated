@@ -59,6 +59,14 @@ const Navbar = () => {
           >
             What we do?
           </a>
+
+          <a
+              href="/projects"
+              className="block text-sm text-gray-400 hover:text-white transition-colors py-2 px-4"
+              >
+                Portfolio
+            </a>
+
           <button
             onClick={() =>
               (window.location.href =
@@ -105,6 +113,14 @@ const Navbar = () => {
             >
               What we do?
             </a>
+
+            <a
+              href="/projects"
+              className="block text-sm text-gray-400 hover:text-white transition-colors py-2 px-4"
+              >
+                Portfolio
+            </a>
+
             <button
               onClick={() =>
                 (window.location.href =
