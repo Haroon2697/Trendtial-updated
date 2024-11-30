@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Home, Utensils,  Luggage, Heart, Sun  } from "lucide-react";
+import { Home, Utensils,  Luggage, Heart, Sun ,Dumbbell  } from "lucide-react";
 
 const categories = [
   { 
@@ -8,11 +8,11 @@ const categories = [
     icon: Home,
     images:
      [
-        "/Images/Social media Marketing/Medical Spa/image 0.webp", 
-        "/Images/Social media Marketing/Medical Spa/image 01.webp",
-        "/Images/Social media Marketing/Medical Spa/image 02.webp",
-        "/Images/Social media Marketing/Medical Spa/image 03.webp",
-        "/Images/Social media Marketing/Medical Spa/image 05.webp",
+        "/Images/SocialMedia/MedicalSpa/image0.webp", 
+        "/Images/SocialMedia/MedicalSpa/image01.webp",
+        "/Images/SocialMedia/MedicalSpa/image02.webp",
+        "/Images/SocialMedia/MedicalSpa/image03.webp",
+        "/Images/SocialMedia/MedicalSpa/image05.webp",
 
      ] 
 
@@ -23,26 +23,25 @@ const categories = [
     icon: Utensils, 
     images: 
     [
-        "/Images/Social media Marketing/Resturant/image 0.webp",
-        "/Images/Social media Marketing/Resturant/image 01.webp",
-        "/Images/Social media Marketing/Resturant/image 02.webp",
-        "/Images/Social media Marketing/Resturant/image 03.webp",
-        "/Images/Social media Marketing/Resturant/image 04.webp",
-        "/Images/Social media Marketing/Resturant/image 05.webp",
-        "/Images/Social media Marketing/Resturant/image 06.webp",
+        "/Images/SocialMedia/Resturant/image01.webp",
+        "/Images/SocialMedia/Resturant/image02.webp",
+        "/Images/SocialMedia/Resturant/image03.webp",
+        "/Images/SocialMedia/Resturant/image04.webp",
+        "/Images/SocialMedia/Resturant/image05.jpeg",
+        "/Images/SocialMedia/Resturant/image06.jpeg",
     ]
  },
 
   { 
-    title: "Skincare", 
+    title: "SkinCare", 
     icon: Heart, 
     images: 
     [
-        "/Images/Social media Marketing/Skin Care/image 01.jpeg",
-        "/Images/Social media Marketing/Skin Care/image 02.jpeg",
-        "/Images/Social media Marketing/Skin Care/image 03.jpeg",
-        "/Images/Social media Marketing/Skin Care/image 04.jpeg",
-        "/Images/Social media Marketing/Skin Care/image 05.jpeg",
+        "/Images/SocialMedia/SkinCare/image01.jpeg",
+        "/Images/SocialMedia/SkinCare/image02.jpeg",
+        "/Images/SocialMedia/SkinCare/image03.jpeg",
+        "/Images/SocialMedia/SkinCare/image04.jpeg",
+        "/Images/SocialMedia/SkinCare/image05.jpeg",
     
     ]
  },
@@ -52,11 +51,11 @@ const categories = [
     icon: Sun, 
     images: 
     [
-        "/Images/Social media Marketing/Solar Company/image 01.webp",
-        "/Images/Social media Marketing/Solar Company/image 02.webp",
-        "/Images/Social media Marketing/Solar Company/image 03.webp",
-        "/Images/Social media Marketing/Solar Company/image 04.webp",
-        "/Images/Social media Marketing/Solar Company/image 05.webp",
+        "/Images/SocialMedia/SolarCompany/image01.webp",
+        "/Images/SocialMedia/SolarCompany/image02.webp",
+        "/Images/SocialMedia/SolarCompany/image03.webp",
+        "/Images/SocialMedia/SolarCompany/image04.webp",
+        "/Images/SocialMedia/SolarCompany/image05.webp",
    
     ]
 },
@@ -67,27 +66,27 @@ const categories = [
     
     images: 
     [
-        "/Images/Social media Marketing/Travel and Tour/image 01.jpeg",
-        "/Images/Social media Marketing/Travel and Tour/image 02.jpeg",
-        "/Images/Social media Marketing/Travel and Tour/imahge 03.jpeg",
-        "/Images/Social media Marketing/Travel and Tour/image 04.jpeg",
+        "/Images/SocialMedia/Travelandtour/image01.jpeg",
+        "/Images/SocialMedia/Travelandtour/image02.jpeg",
+        "/Images/SocialMedia/Travelandtour/image03.jpeg",
+        "/Images/SocialMedia/Travelandtour/image04.jpeg",
 
     ]
  },
 
-//  { 
-//     title: "Sports and Fitness", 
-//     icon: Dumbbell,     
+ { 
+    title: "Sports and Fitness", 
+    icon: Dumbbell,     
     
-//     images: 
-//     [
-//         "/Images/Social media Marketing/Travel and Tour/image 01.jpeg",
-//         "/Images/Social media Marketing/Travel and Tour/image 02.jpeg",
-//         "/Images/Social media Marketing/Travel and Tour/image 03.jpeg",
-//         "/Images/Social media Marketing/Travel and Tour/image 04.jpeg",
+    images: 
+    [
+        "/Images/SocialMedia/Travelandtour/image01.jpeg",
+        "/Images/SocialMedia/Travelandtour/image02.jpeg",
+        "/Images/SocialMedia/Travelandtour/image03.jpeg",
+        "/Images/SocialMedia/Travelandtour/image04.jpeg",
 
-//     ]
-//  },
+    ]
+ },
  
 
 

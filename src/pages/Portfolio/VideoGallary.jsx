@@ -164,17 +164,32 @@ const VideoPlayer = ({ src, isLoaded }) => {
 
 const VideoGallery = () => {
   const [videosLoaded, setVideosLoaded] = useState(false);
-  const videoUrls = [
-    "/videos/3d product reel1.mp4",
-    "/videos/3d product reel2.mp4",
-    "/videos/ai generated content reel.mp4",
-    "/videos/brat summer full final.mp4",
-    "/videos/HEY reel.mp4",
-    "/videos/Marketing Strategies.mp4",
-    "/videos/personalized content reel.mp4",
-    "/videos/trad marketing revised 3.mp4",
+  const videoedit = [
+  
+    "/videos/aigeneratedcontentreel.mp4",
+    "/videos/bratsummerfullfinal.mp4",
+    "/videos/HEYreel.mp4",
+    "/videos/3dproductreel1.mp4",
+    "/videos/3dproductreel2.mp4",
+    "/videos/MarketingStrategies.mp4",
+    "/videos/personalizedcontentreel.mp4",
+    "/videos/tradmarketingrevised3.mp4",
     "/videos/VID-20241104-WA0036.mp4",
+
   ];
+
+  const videography = [
+  
+
+    "/videos/Videography/VideoGraphy-BEST-DIGITAL-MARKETING-AGENCY-WITH-SOLUTIONS-TO-YOUR-PROBLEMS_3.mp4",
+    "/videos/Videography/VideoGraphy-BEST-DIGITAL-MARKETING-AGENCY-WITH-SOLUTIONS-TO-YOUR-PROBLEMS_4.mp4",
+    "/videos/Videography/Chocolate-Pizza_2.mp4",
+    "/videos/Videography/Paratha.mp4",
+    "/videos/Videography/Pizza.mp4",
+    "/videos/Videography/Saadi-Di-Sajji_1.mp4",
+
+  ];
+
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -186,7 +201,35 @@ const VideoGallery = () => {
 
   return (
     <div className="min-h-screen bg-[#faf7f5] py-24 px-4">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto pb-10">
+        <motion.div 
+          className="text-center mb-8"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+         <h1 className="text-4xl md:text-6xl font-bold mb-4 text-[#1a1b26]">VideoEditing</h1>
+         <p className="text-xl text-[#1a1b26]">
+            Unleash the Power of Visual Storytelling
+          </p>
+        </motion.div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          {videoedit.map((url, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              <VideoPlayer src={url} isLoaded={videosLoaded} />
+            </motion.div>
+          ))}
+        </div>
+      </div>
+      
+{/*VideoGraphy */}
+
+<div className="max-w-7xl mx-auto">
         <motion.div 
           className="text-center mb-8"
           initial={{ opacity: 0, y: -20 }}
@@ -199,7 +242,7 @@ const VideoGallery = () => {
           </p>
         </motion.div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {videoUrls.map((url, index) => (
+          {videography.map((url, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, scale: 0.9 }}
@@ -211,6 +254,8 @@ const VideoGallery = () => {
           ))}
         </div>
       </div>
+
+
     </div>
   );
 };
