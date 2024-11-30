@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Home, Utensils,  Luggage, Heart, Sun , Dumbbell } from "lucide-react";
+import { Home, Utensils,  Luggage, Heart, Sun  } from "lucide-react";
 
 const categories = [
   { 
@@ -69,25 +69,25 @@ const categories = [
     [
         "/Images/Social media Marketing/Travel and Tour/image 01.jpeg",
         "/Images/Social media Marketing/Travel and Tour/image 02.jpeg",
-        "/Images/Social media Marketing/Travel and Tour/image 03.jpeg",
+        "/Images/Social media Marketing/Travel and Tour/imahge 03.jpeg",
         "/Images/Social media Marketing/Travel and Tour/image 04.jpeg",
 
     ]
  },
 
- { 
-    title: "Sports and Fitness", 
-    icon: Dumbbell,     
+//  { 
+//     title: "Sports and Fitness", 
+//     icon: Dumbbell,     
     
-    images: 
-    [
-        "/Images/Social media Marketing/Travel and Tour/image 01.jpeg",
-        "/Images/Social media Marketing/Travel and Tour/image 02.jpeg",
-        "/Images/Social media Marketing/Travel and Tour/image 03.jpeg",
-        "/Images/Social media Marketing/Travel and Tour/image 04.jpeg",
+//     images: 
+//     [
+//         "/Images/Social media Marketing/Travel and Tour/image 01.jpeg",
+//         "/Images/Social media Marketing/Travel and Tour/image 02.jpeg",
+//         "/Images/Social media Marketing/Travel and Tour/image 03.jpeg",
+//         "/Images/Social media Marketing/Travel and Tour/image 04.jpeg",
 
-    ]
- },
+//     ]
+//  },
  
 
 
