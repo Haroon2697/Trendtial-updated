@@ -82,7 +82,7 @@ const ProjectsPage = () => {
   const filteredProjects = projectsData.filter(project => project.category === activeTab);
 
   return (
-    <section className="min-h-screen bg-gray-900 text-white pt-36 pb-52">
+    <section className="min-h-screen bg-black text-white pt-36 pb-52">
       <div className="container mx-auto px-4 md:px-8">
         {/* Tabs */}
         <div className="flex justify-center mb-16 space-x-8">

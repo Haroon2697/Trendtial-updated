@@ -7,6 +7,7 @@ import VideoGallary from "./pages/Portfolio/VideoGallary";
 import SEO from "./pages/Portfolio/SEO";
 import WebDev from "./pages/Portfolio/WebDev";
 import Footer from "./components/Footer";
+import Message from "./pages/Portfolio/message";
 
 function App() {
   return (
@@ -18,15 +19,15 @@ function App() {
           <Route path="/projects" element={<ProjectsPage />} />
 
           {/* Tech */}
-          
-          <Route path="/projects/:category/:Content Writing & SEO Optimization" element={<WebDev />} />
+          <Route path="/projects/:category/:Web Development Process" element={<WebDev />} />
           
           {/* Marketing */}
 
           <Route path="/projects/:category/:Video Editing & Production" element={<VideoGallary />} /> 
-          <Route path="/projects/:category/:Web Development Process" element={<SEO />} />
+          <Route path="/projects/:category/:Content Writing & SEO Optimization" element={<SEO />} />
+
           
-          <Route path="/projects/:category/:ProjectName" element={<VideoGallary />} />
+          <Route path="/projects/:category/:ProjectName" element={<Message />} />
 
           {/* Shopify */}
 
