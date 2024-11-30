@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Home, Utensils,  Luggage, Heart, Sun } from "lucide-react";
+import { Home, Utensils,  Luggage, Heart, Sun , Dumbbell } from "lucide-react";
 
 const categories = [
   { 
@@ -52,13 +52,12 @@ const categories = [
     icon: Sun, 
     images: 
     [
-        "/Images/Social media Marketing/Resturant/image 0.webp",
-        "/Images/Social media Marketing/Resturant/image 01.webp",
-        "/Images/Social media Marketing/Resturant/image 02.webp",
-        "/Images/Social media Marketing/Resturant/image 03.webp",
-        "/Images/Social media Marketing/Resturant/image 04.webp",
-        "/Images/Social media Marketing/Resturant/image 05.webp",
-        "/Images/Social media Marketing/Resturant/image 06.webp",
+        "/Images/Social media Marketing/Solar Company/image 01.webp",
+        "/Images/Social media Marketing/Solar Company/image 02.webp",
+        "/Images/Social media Marketing/Solar Company/image 03.webp",
+        "/Images/Social media Marketing/Solar Company/image 04.webp",
+        "/Images/Social media Marketing/Solar Company/image 05.webp",
+   
     ]
 },
 
@@ -76,22 +75,38 @@ const categories = [
     ]
  },
 
+ { 
+    title: "Sports and Fitness", 
+    icon: Dumbbell,     
+    
+    images: 
+    [
+        "/Images/Social media Marketing/Travel and Tour/image 01.jpeg",
+        "/Images/Social media Marketing/Travel and Tour/image 02.jpeg",
+        "/Images/Social media Marketing/Travel and Tour/image 03.jpeg",
+        "/Images/Social media Marketing/Travel and Tour/image 04.jpeg",
+
+    ]
+ },
  
 
 
 ];
 
 const CategoryCard = ({ title, icon: Icon, onClick }) => (
-  <motion.div
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
-    onClick={onClick}
-    className="flex flex-col items-center gap-4 p-6 bg-white rounded-full shadow-lg cursor-pointer w-32 h-32 justify-center transition-colors hover:bg-red-50"
-  >
-    <Icon className="w-12 h-12 text-red-600" />
-    <span className="text-sm font-medium text-center text-black">{title}</span>
-  </motion.div>
-);
+    <motion.div
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      onClick={onClick}
+      className="flex flex-col items-center justify-center gap-2 p-6 bg-white rounded-full shadow-lg cursor-pointer w-32 h-32 transition-transform hover:bg-red-50"
+    >
+      <div className="flex items-center justify-center w-12 h-12">
+        <Icon className="text-red-600 w-full h-full" />
+      </div>
+      <span className="text-sm font-medium text-center text-black">{title}</span>
+    </motion.div>
+  );
+  
 
 const ImageGallery = ({ title, images }) => (
   <motion.div
@@ -100,7 +115,7 @@ const ImageGallery = ({ title, images }) => (
     exit={{ opacity: 0 }}
     className="fixed inset-0 bg-black bg-opacity-90 z-50 overflow-y-auto"
   >
-    <div className="container mx-auto px-4 py-20">
+    <div className="container  mx-auto px-4 py-20">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
