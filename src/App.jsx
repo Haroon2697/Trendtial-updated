@@ -8,6 +8,7 @@ import SEO from "./pages/Portfolio/SEO";
 import WebDev from "./pages/Portfolio/WebDev";
 import Footer from "./components/Footer";
 import Message from "./pages/Portfolio/message";
+import SocialMediaMarketing from "./pages/Portfolio/SocialMediaMarketing";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
 
           <Route path="/projects/:category/:Video Editing & Production" element={<VideoGallary />} /> 
           <Route path="/projects/:category/:Content Writing & SEO Optimization" element={<SEO />} />
+          <Route path="/projects/:category/:Social Media Management" element={<SocialMediaMarketing />} />
 
           
           <Route path="/projects/:category/:ProjectName" element={<Message />} />
