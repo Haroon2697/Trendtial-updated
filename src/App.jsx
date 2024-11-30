@@ -26,7 +26,7 @@ function App() {
 
           <Route path="/projects/:category/:Video Editing & Production" element={<VideoGallary />} /> 
           <Route path="/projects/:category/:Content Writing & SEO Optimization" element={<SEO />} />
-          <Route path="/projects/:category/:Social Media Management" element={<SocialMediaMarketing />} />
+          <Route path="/projects/:category/:Social Media Marketing" element={<SocialMediaMarketing />} />
 
           
           <Route path="/projects/:category/:ProjectName" element={<Message />} />

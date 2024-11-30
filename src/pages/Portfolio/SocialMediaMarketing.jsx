@@ -1,14 +1,84 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Home, Utensils, Shirt, Luggage, Heart, MonitorIcon as Running } from "lucide-react";
+import { Home, Utensils,  Luggage, Heart, Sun } from "lucide-react";
 
 const categories = [
-  { title: "Real Estate", icon: Home, images: ["/Medical Spa/image1.jpg", "/Medical Spa/image2.jpg"] },
-  { title: "Restaurants", icon: Utensils, images: ["/Resturant/image1.jpg", "/Resturant/image2.jpg"] },
-  { title: "Apparels", icon: Shirt, images: ["/Solar Company/image1.jpg", "/Solar Company/image2.jpg"] },
-  { title: "Travel and Tours", icon: Luggage, images: ["/Travel and tour/image1.jpg", "/Travel and tour/image2.jpg"] },
-  { title: "Skincare", icon: Heart, images: ["/Skin Care/image1.jpg", "/Skin Care/image2.jpg"] },
-  { title: "Sports and Fitness", icon: Running, images: ["/Medical Spa/image1.jpg", "/Medical Spa/image2.jpg"] },
+  { 
+    title: "Real Estate",
+    icon: Home,
+    images:
+     [
+        "/Images/Social media Marketing/Medical Spa/image 0.webp", 
+        "/Images/Social media Marketing/Medical Spa/image 01.webp",
+        "/Images/Social media Marketing/Medical Spa/image 02.webp",
+        "/Images/Social media Marketing/Medical Spa/image 03.webp",
+        "/Images/Social media Marketing/Medical Spa/image 05.webp",
+
+     ] 
+
+},
+  { 
+    title: 
+    "Restaurants", 
+    icon: Utensils, 
+    images: 
+    [
+        "/Images/Social media Marketing/Resturant/image 0.webp",
+        "/Images/Social media Marketing/Resturant/image 01.webp",
+        "/Images/Social media Marketing/Resturant/image 02.webp",
+        "/Images/Social media Marketing/Resturant/image 03.webp",
+        "/Images/Social media Marketing/Resturant/image 04.webp",
+        "/Images/Social media Marketing/Resturant/image 05.webp",
+        "/Images/Social media Marketing/Resturant/image 06.webp",
+    ]
+ },
+
+  { 
+    title: "Skincare", 
+    icon: Heart, 
+    images: 
+    [
+        "/Images/Social media Marketing/Skin Care/image 01.jpeg",
+        "/Images/Social media Marketing/Skin Care/image 02.jpeg",
+        "/Images/Social media Marketing/Skin Care/image 03.jpeg",
+        "/Images/Social media Marketing/Skin Care/image 04.jpeg",
+        "/Images/Social media Marketing/Skin Care/image 05.jpeg",
+    
+    ]
+ },
+
+ { 
+    title: "Solar Company", 
+    icon: Sun, 
+    images: 
+    [
+        "/Images/Social media Marketing/Resturant/image 0.webp",
+        "/Images/Social media Marketing/Resturant/image 01.webp",
+        "/Images/Social media Marketing/Resturant/image 02.webp",
+        "/Images/Social media Marketing/Resturant/image 03.webp",
+        "/Images/Social media Marketing/Resturant/image 04.webp",
+        "/Images/Social media Marketing/Resturant/image 05.webp",
+        "/Images/Social media Marketing/Resturant/image 06.webp",
+    ]
+},
+
+ { 
+    title: "Travel and Tours", 
+    icon: Luggage,     
+    
+    images: 
+    [
+        "/Images/Social media Marketing/Travel and Tour/image 01.jpeg",
+        "/Images/Social media Marketing/Travel and Tour/image 02.jpeg",
+        "/Images/Social media Marketing/Travel and Tour/image 03.jpeg",
+        "/Images/Social media Marketing/Travel and Tour/image 04.jpeg",
+
+    ]
+ },
+
+ 
+
+
 ];
 
 const CategoryCard = ({ title, icon: Icon, onClick }) => (
