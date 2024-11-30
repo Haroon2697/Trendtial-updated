@@ -235,7 +235,7 @@ export default SEO
 //       className=" relative w-full h-20 sm:h-20 overflow-hidden rounded-lg"
 //     >
 //       <img
-//         src={`/SEO/${image}`}
+//         src={`/Images/SEO/${image}`}
 //         alt={`${title} - Image ${index + 1}`}
 //         className="pb-1 w-full h-full object-cover"
 //       />

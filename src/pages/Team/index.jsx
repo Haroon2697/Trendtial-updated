@@ -41,7 +41,7 @@ const TeamSection = () => {
     {
       name: "Muhammad Junaid",
       role: "CTO & Co-Founder",
-      imageUrl: "/junaid.jpg",
+      imageUrl: "/Images/Team-pics/junaid.jpg",
       bio: "Visionary technologist with a passion for AI and machine learning.",
       color: "from-teal-500 to-teal-700",
       linkedinUrl: "https://linkedin.com/in/muhammad-junaid",
@@ -50,7 +50,7 @@ const TeamSection = () => {
     {
       name: "Abdul Faheem",
       role: "CFO & Co-Founder",
-      imageUrl: "/faheem.jpg",
+      imageUrl: "/Images/Team-pics/faheem.jpg",
       bio: "Financial expert ensuring sustainable growth and profitability.",
       color: "from-purple-500 to-purple-700",
       linkedinUrl: "https://www.linkedin.com/in/abdul-faheem-111a0b1b9/",
@@ -59,7 +59,7 @@ const TeamSection = () => {
     {
       name: "Khizar",
       role: "CSO & Co-Founder",
-      imageUrl: "/khizar.jpg",
+      imageUrl: "/Images/Team-pics/khizar.jpg",
       bio: "Building lasting relationships and expanding our client base.",
       color: "from-green-600 to-green-800",
       linkedinUrl: "https://linkedin.com/in/khizar",
@@ -68,7 +68,7 @@ const TeamSection = () => {
     {
       name: "Khadija",
       role: "Head HR",
-      imageUrl: "/khadija.jpeg",
+      imageUrl: "/Images/Team-pics/khadija.jpeg",
       bio: "Cultivating a positive work culture and nurturing talent.",
       color: "from-pink-500 to-pink-700",
       linkedinUrl: "https://linkedin.com/in/khadija",
@@ -78,7 +78,7 @@ const TeamSection = () => {
     {
       name: "Emaan",
       role: "Director Sales",
-      imageUrl: "/emaan.jpg",
+      imageUrl: "/Images/Team-pics/emaan.jpg",
       bio: "Driving revenue growth through strategic sales initiatives.",
       color: "from-green-500 to-green-700",
       linkedinUrl: "https://linkedin.com/in/emaanazhar",
@@ -120,7 +120,7 @@ const TeamSection = () => {
     {
       name: "Aabis",
       role: "Head Web Development",
-      imageUrl: "/aabis.jpg",
+      imageUrl: "/Images/Team-pics/aabis.jpg",
       bio: "Crafting seamless digital experiences through innovative web solutions.",
       color: "from-purple-500 to-purple-700",
       linkedinUrl: "https://linkedin.com/in/aabis",
@@ -129,7 +129,7 @@ const TeamSection = () => {
     {
       name: "Tooba",
       role: "Director Global Expansion",
-      imageUrl: "/tooba.jpg",
+      imageUrl: "/Images/Team-pics/tooba.jpg",
       bio: "Spearheading international growth through data-driven strategies.",
       color: "from-pink-500 to-pink-700",
       linkedinUrl: "https://linkedin.com/in/tooba",
