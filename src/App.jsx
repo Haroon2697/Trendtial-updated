@@ -9,9 +9,12 @@ import WebDev from "./pages/Portfolio/WebDev";
 import Footer from "./components/Footer";
 import Message from "./pages/Portfolio/message";
 import SocialMediaMarketing from "./pages/Portfolio/SocialMediaMarketing";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
+<>
+    <ScrollToTop />
     <div className="min-h-screen bg-red-500">
       <Navbar />
       <Routes>
@@ -34,14 +37,15 @@ function App() {
           {/* Shopify */}
 
 
-          
-
-
           <Route path="*" element={<h1>Not Found</h1>} />
           
       </Routes>
       <Footer />
+
+    
     </div>
+
+    </>
   );
 }
 
