@@ -132,58 +132,53 @@ const WebDev = () => {
       url: "https://sphora-app-project-mm.netlify.app", 
       category: "E-COMMERCE",
       technologies: ["React", "Node.js", "MongoDB"],
-      image: "/Images/WebDev/14.JPG"
+      image: "/Images/WebDev/13.png"
     },
+ 
+
     { 
       id: 2, 
-      name: "WHOLESALERS ECOMMERCE MARKET PLACE", 
-      url: "https://bulkbazaar.netlify.app", 
-      category: "E-COMMERCE",
-      technologies: ["Vue.js", "Express", "PostgreSQL"],
-      image: "/Images/WebDev/15.JPG"
-    },
-    { 
-      id: 3, 
-      name: "XPERTFIRST", 
-      url: "https://xpert-first-app.netlify.app", 
-      category: "E-COMMERCE",
-      technologies: ["React", "Firebase", "Tailwind CSS"],
-      image: "/Images/WebDev/20.JPG"
-    },
-    { 
-      id: 4, 
       name: "UMERCH", 
       url: "https://urmerch.co.uk", 
       category: "E-COMMERCE",
       technologies: ["Shopify", "Liquid", "JavaScript"],
       image: "/Images/WebDev/19.png"
     },
+
     { 
-      id: 5, 
+      id: 3, 
+      name: "WHOLESALERS ECOMMERCE MARKET PLACE", 
+      url: "https://bulkbazaar.netlify.app", 
+      category: "E-COMMERCE",
+      technologies: ["Vue.js", "Express", "PostgreSQL"],
+      image: "/Images/WebDev/11.png"
+    },
+    { 
+      id: 4, 
       name: "FASHION TRENDS", 
       url: "https://stylofin.com", 
       category: "BUSINESS MANAGEMENT",
       technologies: ["WordPress", "PHP", "MySQL"],
-      image: "/Images/WebDev/21.JPG"
+      image: "/Images/WebDev/5.png"
     },
     { 
-      id: 6, 
+      id: 5, 
       name: "SMART LEARNING", 
       url: "https://gosmartlearning.ca", 
       category: "BUSINESS MANAGEMENT",
       technologies: ["Angular", "Node.js", "MongoDB"],
-      image: "/Images/WebDev/22.JPG"
+      image: "/Images/WebDev/7.png"
     },
     { 
-      id: 7, 
+      id: 6, 
       name: "TAX CONSULTANCY PORTFOLIO", 
       url: "https://taxshieldconsultancy.netlify.app", 
       category: "BUSINESS MANAGEMENT", 
       technologies: ["React", "Next.js", "Tailwind CSS"], 
-      image: "/Images/WebDev/16.JPG"
+      image: "/Images/WebDev/6.png"
     },
     { 
-      id: 8, 
+      id: 7, 
       name: "CUSTOMER RELATIONSHIP MANAGEMENT SYSTEM", 
       url: "https://avenue5-international.netlify.app", 
       category: "BUSINESS MANAGEMENT", 
@@ -191,60 +186,61 @@ const WebDev = () => {
       image: "/Images/WebDev/17.JPG"
     },
     { 
-      id: 9, 
+      id: 8, 
       name: "TRAVELING AGENCY PORTFOLIO", 
       url: "https://traveloguers.com", 
       category: "BUSINESS MANAGEMENT", 
       technologies: ["WordPress", "PHP", "MySQL"], 
-      image: "/Images/WebDev/13.JPG"
+      image: "/Images/WebDev/8.png"
     },
     { 
-      id: 10, 
+      id: 9, 
       name: "REAL ESTATE COMPANY PORTFOLIO", 
       url: "https://avenue5international.com", 
       category: "BUSINESS MANAGEMENT", 
       technologies: ["React", "Next.js", "Material UI"], 
-      image: "/Images/WebDev/11.JPG" 
+      image: "/Images/WebDev/9.png" 
     },
+    
     { 
-      id: 11, 
+      id: 10, 
       name: "SPORTS SCORE", 
       url: "https://kingdom-sport.web.app", 
       category: "BUSINESS MANAGEMENT", 
       technologies: ["Angular", "Firebase", "Angular Material"], 
-      image: "/Images/WebDev/18.JPG"
+      image: "/Images/WebDev/10.png"
     },
     { 
-      id: 12, 
+      id: 11, 
       name: "REAL STATE COMPANY PORTFOLIO", 
       url: "https://avenue5central.com", 
       category: "BUSINESS MANAGEMENT", 
       technologies: ["Vue.js", "Nuxt.js", "Tailwind CSS"], 
-      image: "/Images/WebDev/12.JPG"
+      image: "/Images/WebDev/4.png"
     },
     { 
-      id: 13, 
+      id: 12, 
       name: "SOLAR ENERGY, CLEAN ENERGY", 
       url: "https://elitesolutions.pk", 
       category: "BUSINESS MANAGEMENT", 
       technologies: ["WordPress", "PHP", "Elementor"], 
-      image: "/Images/WebDev/23.JPG"
+      image: "/Images/WebDev/3.png"
     },
     { 
-      id: 14, 
+      id: 13, 
       name: "PROFESSIONAL BUSINESS SETUP", 
       url: "https://housemasters.ae", 
       category: "CUSTOMER SERVICE", 
       technologies: ["React", "Next.js", "Stripe"], 
-      image: "/Images/WebDev/24.JPG"
+      image: "/Images/WebDev/2.png"
     },
     { 
-      id: 15, 
+      id: 14, 
       name: "TRUSTED EXPERTS IN SECURITY", 
       url: "https://gdgsecurity.com", 
       category: "CUSTOMER SERVICE", 
       technologies: ["Vue.js", "Laravel", "Tailwind CSS"], 
-      image: "/Images/WebDev/25.JPG"
+      image: "/Images/WebDev/1.png"
     },
   ];
 
@@ -255,7 +251,7 @@ const WebDev = () => {
     : websites;
 
   return (
-    <div className="min-h-screen bg-black py-24 px-8">
+    <div className="min-h-screen bg-black py-24 px-32">
       <header className="mb-12">
         <h1 className="text-4xl font-bold text-white text-center">
           Website Showcase
