@@ -25,7 +25,7 @@ function App() {
           
           {/* Marketing */}
 
-          <Route path="/projects/:category/:video-editing-production" element={<VideoGallary />} /> 
+          <Route path="/projects/:category/:videoeditingproduction" element={<VideoGallary />} /> 
        
 
           {/* Shopify */}

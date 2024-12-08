@@ -13,7 +13,7 @@ const projectsData = [
   },
   {
     category: "marketing",
-    name: "video-editing-production",
+    name: "videoeditingproduction",
     description: "We offer professional video editing and production services to create compelling visual content that resonates with your audience.",
     image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80"
   },
