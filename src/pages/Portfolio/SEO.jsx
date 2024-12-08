@@ -346,14 +346,14 @@ function SEO() {
   ];
 
   return (
-    <section className="min-h-screen bg-black text-white pt-16 sm:pt-20 pb-10 sm:pb-20">
+    <section className="min-h-screen bg-[#faf7f5] text-black pt-16 sm:pt-20 pb-10 sm:pb-20">
       <div className="container mx-auto px-2 sm:px-4 mt-8 sm:mt-0">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-8 sm:mb-16"
         >
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-red-600">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-16 mb-4 text-red-600">
             Search Engine Optimization Portfolio
           </h1>
           <p className="text-lg sm:text-xl opacity-80">

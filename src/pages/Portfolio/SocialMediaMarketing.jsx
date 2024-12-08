@@ -149,15 +149,15 @@ const SocialMediaMarketing = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
   return (
-    <section className="min-h-screen bg-black py-20">
+    <section className="min-h-screen bg-[#faf7f5] py-20">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Our Services</h1>
-          <p className="text-xl text-red-600">Explore our wide range of professional services</p>
+          <h1 className="text-4xl md:text-5xl font-bold mt-16 mb-4 text-red-600">Our Services</h1>
+          <p className="text-xl text-black">Explore our wide range of professional services</p>
         </motion.div>
 
         <motion.div
