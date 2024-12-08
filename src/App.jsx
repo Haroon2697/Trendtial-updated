@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import { Route, Routes } from "react-router-dom"; 
-import ProjectsPage from "./pages/Projects";
+import ProjectsPage from "./pages/Projects/ProjectsPage";
 import TeamPage from "./pages/Team";
 import VideoGallary from "./pages/Portfolio/VideoGallary";
 import SEO from "./pages/Portfolio/SEO";
