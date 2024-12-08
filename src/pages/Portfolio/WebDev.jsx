@@ -5,31 +5,6 @@ import { ArrowRight } from 'lucide-react';
 const WebsiteCard = ({ website }) => {
   const [isHovered, setIsHovered] = useState(false);
 
-  const overlayVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { duration: 0.3 } },
-  };
-
-  const nameVariants = {
-    hidden: { opacity: 0, y: -20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.3, delay: 0.1 } },
-  };
-
-  const categoryVariants = {
-    hidden: { opacity: 0, y: -10 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.3, delay: 0.2 } },
-  };
-
-  const buttonVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.3, delay: 0.3 } },
-  };
-
-  const technologiesVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.3, delay: 0.4 } },
-  };
-
   return (
     <motion.div
       className="relative overflow-hidden rounded-lg shadow-lg bg-gray-800 aspect-video group cursor-pointer"
@@ -56,33 +31,39 @@ const WebsiteCard = ({ website }) => {
       <AnimatePresence>
         {isHovered && (
           <motion.div
-            className="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-between p-4"
-            variants={overlayVariants}
-            initial="hidden"
-            animate="visible"
-            exit="hidden"
+            className="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-between p-4 sm:p-6"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
           >
             <div>
               <motion.h3 
-                className="text-xl font-bold text-white mb-1"
-                variants={nameVariants}
+                className="text-lg sm:text-xl font-bold text-white mb-1"
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.1 }}
               >
                 {website.name}
               </motion.h3>
               <motion.p 
                 className="text-sm text-gray-300"
-                variants={categoryVariants}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 }}
               >
                 {website.category}
               </motion.p>
             </div>
-            <div className="flex justify-between items-end">
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
               <motion.a
                 href={website.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300 transform hover:scale-105 group"
-                variants={buttonVariants}
+                className="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300 transform hover:scale-105 group text-sm sm:text-base"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3 }}
               >
                 <span className="mr-2">Visit Website</span>
                 <motion.span
@@ -94,18 +75,18 @@ const WebsiteCard = ({ website }) => {
                 </motion.span>
               </motion.a>
               <motion.div 
-                className="flex flex-wrap justify-end gap-2 ml-4"
-                variants={technologiesVariants}
+                className="flex flex-wrap gap-2"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4 }}
               >
                 {website.technologies.map((tech, i) => (
-                  <motion.span 
+                  <span 
                     key={i} 
-                    className="inline-block bg-gray-700 text-white rounded-full px-2 py-1 text-xs cursor-pointer"
-                    whileHover={{ scale: 1.1, backgroundColor: "#4A5568" }}
-                    transition={{ duration: 0.2 }}
+                    className="inline-block bg-gray-700 text-white rounded-full px-2 py-1 text-xs"
                   >
                     {tech}
-                  </motion.span>
+                  </span>
                 ))}
               </motion.div>
             </div>
@@ -113,8 +94,8 @@ const WebsiteCard = ({ website }) => {
         )}
       </AnimatePresence>
       {!isHovered && (
-        <div className="absolute bottom-0 left-0 right-0 p-4">
-          <h3 className="text-xl font-bold text-white mb-1">{website.name}</h3>
+        <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+          <h3 className="text-lg sm:text-xl font-bold text-white mb-1">{website.name}</h3>
           <p className="text-sm text-gray-300">{website.category}</p>
         </div>
       )}
@@ -251,17 +232,19 @@ const WebDev = () => {
     : websites;
 
   return (
-    <div className="min-h-screen bg-black py-24 px-32">
-      <header className="mb-12">
-        <h1 className="text-4xl font-bold text-white text-center">
+    <section className="min-h-screen bg-black py-12 sm:py-16 md:py-24 px-4 sm:px-8 md:px-16 lg:px-32">
+      <header className="mb-8 sm:mb-12">
+        <h1 className="text-3xl sm:text-4xl font-bold text-white text-center">
           Website Showcase
         </h1>
       </header>
 
-      <div className="mb-8 flex flex-wrap justify-center gap-4">
+      <div className="flex flex-wrap justify-center mb-8 sm:mb-12 gap-3 sm:gap-4 px-4">
         <motion.button
           onClick={() => setSelectedCategory(null)}
-          className={`px-4 py-2 rounded-full ${selectedCategory === null ? 'bg-blue-600 text-white' : 'bg-gray-800 text-white'}`}
+          className={`text-sm sm:text-base font-semibold px-4 py-2 sm:px-6 sm:py-3 rounded-lg transition-all duration-300 ${
+            selectedCategory === null ? 'bg-blue-600 text-white' : 'bg-gray-800 text-gray-300'
+          }`}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
@@ -271,7 +254,9 @@ const WebDev = () => {
           <motion.button
             key={category}
             onClick={() => setSelectedCategory(category)}
-            className={`px-4 py-2 rounded-full ${selectedCategory === category ? 'bg-blue-600 text-white' : 'bg-gray-800 text-white'}`}
+            className={`text-sm sm:text-base font-semibold px-4 py-2 sm:px-6 sm:py-3 rounded-lg transition-all duration-300 ${
+              selectedCategory === category ? 'bg-blue-600 text-white' : 'bg-gray-800 text-gray-300'
+            }`}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -282,7 +267,7 @@ const WebDev = () => {
 
       <AnimatePresence>
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -294,19 +279,19 @@ const WebDev = () => {
         </motion.div>
       </AnimatePresence>
 
-      <footer className="mt-16 text-center">
-        <h2 className="text-2xl font-bold mb-4 text-white">Get in Touch</h2>
+      <footer className="mt-12 sm:mt-16 text-center px-4">
+        <h2 className="text-xl sm:text-2xl font-bold mb-4 text-white">Get in Touch</h2>
         <p className="mb-4 text-gray-300">Interested in working together? Let's connect!</p>
         <motion.a
           href="mailto:contact@example.com"
-          className="inline-block px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors duration-300"
+          className="inline-block text-sm sm:text-base px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
           Contact Me
         </motion.a>
       </footer>
-    </div>
+    </section>
   );
 };
 
