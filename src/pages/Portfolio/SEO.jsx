@@ -217,6 +217,7 @@
 
 // export default SEO
 
+
 import React from 'react';
 import { motion } from 'framer-motion';
 
@@ -224,27 +225,28 @@ const CaseStudy = ({ title, images, objective, strategies, results, className })
   <motion.div
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
-    className={`rounded-xl p-6 shadow-2xl ${className} flex flex-col`}
+    className={`rounded-xl p-3 sm:p-6 shadow-2xl ${className} flex flex-col`}
   >
-    <h2 className="text-2xl font-bold mb-6">{title}</h2>
+    <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">{title}</h2>
     
-    <div className="  py-4 gap-4 mb-8  ">
-  {images.map((image, index) => (
-    <div 
-      key={index} 
-      className=" relative w-full h-20 sm:h-20 overflow-hidden rounded-lg"
-    >
-      <img
-        src={`/Images/SEO/${image}`}
-        alt={`${title} - Image ${index + 1}`}
-        className="pb-1 w-full h-full object-cover"
-      />
+    <div className="flex flex-col gap-2 mb-2 sm:mb-3">
+      {images.map((image, index) => (
+        <div 
+          key={index} 
+          className="bg-white p-1 rounded-lg shadow-md"
+        >
+          <div className="relative w-full overflow-hidden rounded-lg">
+            <img
+              src={`/Images/SEO/${image}`}
+              alt={`${title} - Image ${index + 1}`}
+              className="w-full h-full object-contain"
+            />
+          </div>
+        </div>
+      ))}
     </div>
-  ))}
-</div>
 
-
-    <div className="space-y-6">
+    <div className="space-y-4 sm:space-y-6">
       <div>
         <h3 className="font-semibold mb-2">Objective:</h3>
         <p className="opacity-80">{objective}</p>
@@ -252,7 +254,7 @@ const CaseStudy = ({ title, images, objective, strategies, results, className })
 
       <div>
         <h3 className="font-semibold mb-2">Strategies Implemented:</h3>
-        <ul className="list-disc list-inside opacity-80 space-y-2">
+        <ul className="list-disc list-inside opacity-80 space-y-1 sm:space-y-2">
           {strategies.map((strategy, index) => (
             <li key={index}>{strategy}</li>
           ))}
@@ -261,7 +263,7 @@ const CaseStudy = ({ title, images, objective, strategies, results, className })
 
       <div>
         <h3 className="font-semibold mb-2">Results:</h3>
-        <ul className="list-disc list-inside opacity-80 space-y-2">
+        <ul className="list-disc list-inside opacity-80 space-y-1 sm:space-y-2">
           {results.map((result, index) => (
             <li key={index}>{result}</li>
           ))}
@@ -344,22 +346,22 @@ function SEO() {
   ];
 
   return (
-    <section className="min-h-screen bg-black text-white py-20">
-      <div className="container mx-auto px-4">
+    <section className="min-h-screen bg-black text-white pt-16 sm:pt-20 pb-10 sm:pb-20">
+      <div className="container mx-auto px-2 sm:px-4 mt-8 sm:mt-0">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-16"
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-red-600">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-red-600">
             Search Engine Optimization Portfolio
           </h1>
-          <p className="text-xl opacity-80">
+          <p className="text-lg sm:text-xl opacity-80">
             Where SEO Excellence Meets Unforgettable Organic Triumph!
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid sm:grid-cols-2 gap-4 sm:gap-8">
           {caseStudies.map((study, index) => (
             <CaseStudy 
               key={index} 
@@ -374,6 +376,4 @@ function SEO() {
 }
 
 export default SEO;
-
-
 
