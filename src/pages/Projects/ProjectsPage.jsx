@@ -82,7 +82,7 @@ const ProjectsPage = () => {
 
   return (
     <section className="min-h-screen bg-black text-white pt-20 sm:pt-28 md:pt-36 pb-20 sm:pb-36 md:pb-52">
-      <div className="container mx-auto px-4 md:px-8">
+      <div className="container mx-auto lg:px-24 md:px-8">
         {/* Tabs */}
         <div className="flex flex-wrap justify-center mb-8 sm:mb-12 md:mb-16 space-x-2 sm:space-x-4 md:space-x-8">
           {["tech", "marketing", "shopify"].map((tab) => (
