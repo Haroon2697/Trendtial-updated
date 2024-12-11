@@ -86,3 +86,28 @@ body.dark {
 .slick-dots li.slick-active button:before, .slick-dots li button:before {
   color: white !important; 
 }
+
+
+
+body {
+  @apply bg-black text-white;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.custom-cursor:hover {
+  width: 60px;
+  height: 60px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+

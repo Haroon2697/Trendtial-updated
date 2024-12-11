@@ -27,7 +27,7 @@ const ProjectCard = ({ project }) => {
         alt={project.name}
         className="absolute inset-0 w-full h-full object-cover"
         initial={{ scale: 1 }}
-        animate={{ scale: isHovered ? 1.1 : 1 }}
+        animate={{ scale: isHovered ? 1.05 : 1 }}
         transition={{ duration: 0.3 }}
       />
       <motion.div
