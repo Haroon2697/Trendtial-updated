@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import Message from "./pages/Portfolio/message";
 import SocialMediaMarketing from "./pages/Portfolio/SocialMediaMarketing";
 import ScrollToTop from "./components/ScrollToTop";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -37,7 +38,7 @@ function App() {
           {/* Shopify */}
 
 
-      
+          <Route path="*" element={<NotFound />} />
           
       </Routes>
       <Footer />
